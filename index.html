@@ -1,109 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Sports Times</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
       color: #222;
     }
+
     header {
-      background: #1d3557;
+      background: #1e293b;
       color: white;
-      padding: 20px;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
       text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #3b82f6, #22c55e);
+      color: white;
     }
-    .container {
-      max-width: 900px;
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
       margin: auto;
-      padding: 20px;
     }
-    article {
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
       background: white;
-      border-radius: 8px;
-      padding: 15px 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: #1e293b;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    h2 {
-      color: #1d3557;
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
     footer {
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      background: #e5e5e5;
+      padding: 20px;
+      background: #e5e7eb;
       font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>The Sports Times</h1>
-  <p>Your 2025 Sports News Summary</p>
-</header>
+  <header>
+    <h2>My Website</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<div class="container">
+  <section class="hero" id="home">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple starter website you can customize with your own content, colors, and sections.</p>
+    <a class="button" href="#about">Get Started</a>
+  </section>
 
-  <article>
-    <h2>Dodgers Repeat as World Series Champs</h2>
+  <section class="section" id="about">
+    <h2>About The Sports Times</h2>
     <p>
-      The Los Angeles Dodgers clinched back-to-back World Series titles in 2025, beating the Toronto Blue Jays in an epic Game 7 that many called one of the greatest World Series finales ever. It featured dramatic late innings and standout performances, pushing the Dodgers deeper into baseball lore. :contentReference[oaicite:0]{index=0}
+      <strong>The Sports Times</strong> is a school news website covering the biggest sports moments and trending stories from 2025.
+      All articles below are already written for you — you do NOT need to type anything.
     </p>
-  </article>
+  </section>
 
-  <article>
-    <h2>Oklahoma City Thunder Win First NBA Title</h2>
-    <p>
-      In a historic season, the Oklahoma City Thunder captured their first NBA Championship. Led by star Shai Gilgeous-Alexander, the franchise finally reached the top after years of playoff near-misses. :contentReference[oaicite:1]{index=1}
-    </p>
-  </article>
+  <section class="section" id="articles">
+    <h2>Top Sports Stories (2025)</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🏀 NBA Finals Thriller</h3>
+        <p>The championship series went to a dramatic Game 7, where a last‑minute three‑pointer sealed the title. Fans called it one of the most exciting finals in years.</p>
+      </div>
+      <div class="card">
+        <h3>⚽ Record‑Breaking Soccer Transfer</h3>
+        <p>A young superstar signed the biggest transfer deal in football history, changing the future of his club and breaking worldwide sales records for jerseys.</p>
+      </div>
+      <div class="card">
+        <h3>🏈 Super Bowl Overtime Classic</h3>
+        <p>The Super Bowl went into overtime after a late touchdown tied the game. A perfectly executed drive ended with a walk‑off score.</p>
+      </div>
+      <div class="card">
+        <h3>🎾 Tennis Legend Wins Final Grand Slam</h3>
+        <p>A legendary tennis player captured one last Grand Slam title before announcing retirement, receiving a standing ovation from the crowd.</p>
+      </div>
+      <div class="card">
+        <h3>🏒 Hockey Team Completes Historic Comeback</h3>
+        <p>Down three games in the playoffs, the team rallied to win four straight games and advance to the finals, shocking fans and analysts.</p>
+      </div>
+      <div class="card">
+        <h3>🥇 Olympic Trials: Teen Sensation Qualifies</h3>
+        <p>A 16‑year‑old athlete broke national records during Olympic trials, becoming one of the youngest competitors to qualify.</p>
+      </div>
+    </div>
+  </section>
 
-  <article>
-    <h2>Florida Panthers & Repeat Stanley Cup Winners</h2>
-    <p>
-      The Florida Panthers continued their dominance in the NHL, winning the Stanley Cup again and proving themselves as one of the strongest teams in recent seasons. :contentReference[oaicite:2]{index=2}
-    </p>
-  </article>
+  <section class="section" id="weather">
+    <h2>Next Week's Weather</h2>
+    <p>Weekly forecast for school planning:</p>
+    <div id="weather-list"></div>
+  </section>
 
-  <article>
-    <h2>Super League Grand Final: Hull KR Makes History</h2>
-    <p>
-      Hull Kingston Rovers captured the 2025 Super League Grand Final title with a 24-6 win over Wigan Warriors at Old Trafford, completing a historic treble. :contentReference[oaicite:3]{index=3}
-    </p>
-  </article>
+  <section class="section" id="apply">
+    <h2>Applications</h2>
+    <p>Apply to contribute to <strong>The Sports Times</strong> or try the job application.</p>
+    <button onclick="applyNewspaper()" style="padding:14px 22px;margin-right:12px;border:none;border-radius:8px;background:#2563eb;color:white;font-weight:bold;cursor:pointer;">Apply for Newspaper</button>
+    <button onclick="applyJob()" style="padding:14px 22px;border:none;border-radius:8px;background:#16a34a;color:white;font-weight:bold;cursor:pointer;">Apply for a Job</button>
+  </section>
 
-  <article>
-    <h2>Wimbledon Goes Viral with New Social Strategy</h2>
-    <p>
-      Wimbledon embraced social media in a big way, especially on TikTok, doubling engagement and reaching millions of new fans with creative behind-the-scenes content during the tournament. :contentReference[oaicite:4]{index=4}
-    </p>
-  </article>
+  <section class="section" id="projects">
+    <h2>My Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Describe your project here.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Describe your project here.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Describe your project here.</p>
+      </div>
+    </div>
+  </section>
 
-  <article>
-    <h2>Sydney McLaughlin-Levrone Wins World Title</h2>
-    <p>
-      Track star Sydney McLaughlin-Levrone claimed her fourth world title in the 400m at the 2025 Championship, clocking a time that ranks among the fastest in history. :contentReference[oaicite:5]{index=5}
-    </p>
-  </article>
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+  </section>
 
-  <article>
-    <h2>Luke Littler Dominates in Darts</h2>
-    <p>
-      In the 2025 Grand Slam of Darts, rising star Luke Littler retained his title and became world number one, showcasing impressive consistency and skill throughout the tournament. :contentReference[oaicite:6]{index=6}
-    </p>
-  </article>
+  <section class="section" id="weather">
+    <h2>Next Week's Weather</h2>
+    <div id="weather-list"></div>
+  </section>
 
-</div>
+  <section class="section" id="apply">
+    <h2>Applications</h2>
+    <button onclick="applyNewspaper()" style="padding:12px 20px;margin-right:10px;border:none;border-radius:6px;background:#3b82f6;color:white;font-weight:bold;cursor:pointer;">Apply for Newspaper</button>
+    <button onclick="applyJob()" style="padding:12px 20px;border:none;border-radius:6px;background:#22c55e;color:white;font-weight:bold;cursor:pointer;">Apply for a Job</button>
+  </section>
 
-<footer>
-  © 2026 The Sports Times — Built for School
-</footer>
+  <footer>
+    © 2026 My Website. All rights reserved.
+  </footer>
+
+<script>
+// Weather (example static forecast – you can change later)
+const forecast = [
+  { day: "Monday", temp: "3°C", condition: "Cloudy" },
+  { day: "Tuesday", temp: "5°C", condition: "Sunny" },
+  { day: "Wednesday", temp: "1°C", condition: "Snow" },
+  { day: "Thursday", temp: "4°C", condition: "Partly Cloudy" },
+  { day: "Friday", temp: "6°C", condition: "Sunny" },
+  { day: "Saturday", temp: "2°C", condition: "Windy" },
+  { day: "Sunday", temp: "5°C", condition: "Rain" }
+];
+
+const weatherDiv = document.getElementById("weather-list");
+forecast.forEach(day => {
+  const p = document.createElement("p");
+  p.textContent = `${day.day}: ${day.temp} - ${day.condition}`;
+  weatherDiv.appendChild(p);
+});
+
+// Newspaper Application
+function applyNewspaper() {
+  const name = prompt("Enter your name:");
+  if (name) {
+    alert(`Successful! ${name}, here is a preview of your newspaper.`);
+    window.open("https://www.canva.com/design/DAG_J71_eYo/FkecB_xsam91DxFVyhNqtA/edit?utm_content=DAG_J71_eYo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton", "_blank");
+  }
+}
+
+// Job Application (Rickroll)
+function applyJob() {
+  const name = prompt("Enter your name:");
+  if (name) {
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  }
+}
+</script>
 
 </body>
 </html>
+
+
